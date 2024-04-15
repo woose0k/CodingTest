@@ -1,18 +1,11 @@
-class Solution {
+import java.util.Scanner;
 
-    public static String solution(String my_string, int k) {
+public class Solution {
+     public static void main(String[] args) {
+      Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
 
-        String newString = "";
-
-        for (int i = 0; i < k; i++) {
-            newString = my_string + newString;
-        }
-        
-        return newString;
-    }
-
-    public static void main(String [] args) {
-        
-        System.out.println(solution("abc", 3));
+        System.out.print(a + " + " + b + " = " + (a + b));
     }
 }
